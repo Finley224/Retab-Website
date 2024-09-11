@@ -1,26 +1,42 @@
+
+  
 body {
     display: flex;
     padding: 0;
     margin: 0;
     min-height: 100vh;
     flex-direction: column;
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #page {
     flex: 1;
+
+}
+
+#body {
     margin: 10px;
 }
 
 #header {
-    background-image: url(https://images.unsplash.com/photo-1453792963263-c85413bfdb63?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnRhbnxlbnwwfHwwfHx8MA%3D%3D);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/src/images/pawel-czerwinski-zd50NyMmNVg-unsplash.jpg);
     height: 150px;
-    background-position: 80% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    gap: 10px;
 }
 
 #pageTitle {
     display: flex;
     justify-content: center;
     font-size: xx-large;
+    color: white;
 }
 
 #mainButtonDiv {
@@ -30,11 +46,12 @@ body {
 }
 
 .mainButton {
-    background-color: cadetblue;
+    background-color: rgb(97, 97, 255);
+    border-radius: 5px;
     padding: 10px;
-    width: 100px;
+    width: 120px;
     text-align: center;
-
+    color: white;
 
 }
 
