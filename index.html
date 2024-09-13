@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="src/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -25,26 +27,37 @@
         <div id="header">
             <a id="pageTitle">ReTab</a>
             <div id="mainButtonDiv">
-                <a class="mainButton">Add to browser</a>
-                <a class="mainButton">View Code</a>
+                <a class="mainButton" onclick='window.open("/install.html",  "_self");'>Add to browser</a>
+                <a class="mainButton"
+                    onclick='window.open("https://www.github.com/Finley224/retab-bookmarklet");'>View Code</a>
             </div>
         </div>
         <div id="body">
-            <a>Why Retab</a>
+            <a>Why ReTab</a>
             <ul>
                 <li>FOSS, privacy respecting</li>
                 <li>Automatic Updates</li>
                 <li>No extension install required</li>
                 <li>Protects against sites changing the tab name</li>
-                </ul>
+                <li>Works on Firefox or Google Chrome</li>
+            </ul>
+            <a>How it works:</a>
+            <br>
+            <a>ReTab uses a bookmarklet to update the name of the tab, then it uses a script to detect and prevent
+                changes to the tab name. The tab name is stored in storage unique to that tab, so you can have multiple
+                tabs from the same website with different names. If you refresh the tab, just click the bookmark again
+                to set the tab name automatically.</a>
         </div>
     </div>
     <div id="footer">
         <div id="footerLinksDiv">
-            <a href="https://github.com/Finley224/retab-bookmarklet" class="footerLink">Retab Repo</a>
+            <a href="https://github.com/Finley224/retab-bookmarklet" class="footerLink">ReTab Repo</a>
             <a href="mailto:xavier224@fastmail.us" class="footerLink">Contact Us</a>
         </div>
-        <a id="footerLowerText">Made with Github Pages | Trans Rights</a>
+        <a id="footerLowerText">Hosted on Github Pages | Protect Trans Rights</a>
+        <a id="footerBrowserText">This site works best on Chrome and Firefox. If you are using Edge or IE, download a
+            real web browser.</a>
+
     </div>
     <script src="src/main.js" async defer></script>
 </body>
