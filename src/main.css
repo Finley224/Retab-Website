@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(/src/images/pawel-czerwinski-zd50NyMmNVg-unsplash.jpg);
+    background-image: url(src/images/pawel-czerwinski-zd50NyMmNVg-unsplash.jpg);
     height: 150px;
     background-size: cover;
     background-repeat: no-repeat;
